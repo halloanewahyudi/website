@@ -1,0 +1,20 @@
+[
+    {
+        "logo":"logo-mycom.png",
+        "title":"Used extensively by clients around the world, MYCOM boasts proof of trust.",
+        "description":"As a leading manufacturer of industrial compressors, we supply high-quality, durable and manageable compressors to industrial refrigeration/freezing, heat pump, and oil and gas markets around the globe.",
+        "image":"mycom.png"
+    },
+    {
+        "logo":"logo-das.png",
+        "title":"We offer a variety of automated deboning machines that meet high quality and high yield.",
+        "description":"Mayekawa has been commercialized as a robot by automating the deboning process. This was a challenge to new technologies that have never been developed, such as robotic handling of irregularly-shaped soft objects",
+        "image":"das.png"
+    },
+    {
+        "logo":"logo-chbrus.png",
+        "title":"Achieving optimal freezing conditions for each product",
+        "description":"We also share values cherished by our customers, working closely with customers at all times to provide solutions tailored to the needs and challenges unique to each country and area.",
+        "image":"chbrus.png"
+    }
+]

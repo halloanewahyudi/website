@@ -1,0 +1,100 @@
+[
+    {
+        "name": "Company",
+        "class": "has-child",
+        "description": "",
+        "child":[
+            {
+                "name": "About Us",
+                "class": "",
+                "description": "",
+                "child":""
+            },
+            {
+                "name": "History",
+                "class": "",
+                "description": "",
+                "child":""
+            },
+            {
+                "name": "Our Commitment",
+                "class": "",
+                "description": "",
+                "child":""
+            },
+            {
+                "name": "Standards & Qualifications",
+                "class": "",
+                "description": "",
+                "child":""
+            },
+            {
+                "name": "Manufacturing Plants",
+                "class": "",
+                "description": "",
+                "child":""
+            }
+        ]
+    },
+    {
+        "name": "Products",
+        "class": "has-child mega-menu",
+        "description": "",
+        "child": [
+            {
+                "name": "Compressors",
+                "child": "",
+                "class": "",
+                "description": " Mayekawa offers a comprehensive range of compressors with models developed in response to the variety of applications."
+            },
+            {
+                "name": "Cooling Systems",
+                "child": "",
+                "class": "",
+                "description": " Our freezing and refrigeration technology is built on decades of experience in design and installments."
+            },
+            {
+                "name": "Heat Pumps",
+                "child": "",
+                "class": "",
+                "description": " Mayekawa has been manufacturing large-sized air-conditioning heat pumps since 1971 well in advance of our competitors."
+            },
+            {
+                "name": "Freezers",
+                "child": "",
+                "class": "",
+                "description": " Mayekawa offers a range of freezers that will achieve the most efficient freezing conditions suitable for your needs.."
+            },
+            {
+                "name": "Gas Compressors",
+                "child": "",
+                "class": "",
+                "description": "  Mayekawa's gas compressors' performance and reliability have been proven all around the world, over and over again."
+            },
+            {
+                "name": "Food Robotics",
+                "child": "",
+                "class": "",
+                "description": "Mayekawa is a pioneer of the robotization for meat processing & has developed different kinds of robots for each process"
+            },
+            {
+                "name": "Other Equipment",
+                "child": "",
+                "class": "",
+                "description": " Mayekawa offers equipment that improves safety, efficiency and saves energy  in f&b and cold storage facilities worldwide"
+            }
+        ]
+    },
+    {
+        "name": "Brochure",
+        "class": "",
+        "description": "",
+        "child": ""
+    },
+    {
+        "name": "Contact",
+        "class": "",
+        "description": "",
+        "child": ""
+    }
+]
