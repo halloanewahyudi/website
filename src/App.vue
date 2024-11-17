@@ -4,7 +4,7 @@
     <HeroVue />
     <Tabs />
     <div class="bg-neutral-100 py-16">
-      <Brand />
+      <Myswiper />
     </div>
     <Stories />
     <FooterVue />
@@ -18,7 +18,7 @@ import NavbarVue from "./components/Navbar.vue";
 import Tabs from "./components/Tabs.vue";
 import Stories from "./components/Stories.vue";
 import FooterVue from "./components/Footer.vue";
-//import Myswiper from "./components/myswiper.vue";
+import Myswiper from "./components/myswiper.vue";
 
 
 
