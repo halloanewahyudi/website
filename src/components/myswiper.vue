@@ -29,7 +29,6 @@
                 <div class="w-full  h-max flex flex-col justify-center items-center bg-white p-6 text-center">
                     <img :src="thumb.logo" alt="" class="h-[90px] object-contain" >
                 </div>
-
             </swiper-slide>
         </swiper>
          </div>
