@@ -21,7 +21,7 @@
                 <div v-if="selectTab"
                     class="flex flex-col justify-center items-center text-white bg-slate-700 relative">
                     <div class="layer"></div>
-                    <div v-if="selectTab.bg_type == 'video'" class="w-full overflow-hidden flex justify-center items-center">
+                    <div v-if="selectTab.bg_type == 'video'" class="w-full overflow-hidden flex justify-center items-center"   :style="{ backgroundImage: `url(${selectTab.cover})` }">
                         <YouTube :src="`https://www.youtube.com/watch?v=${selectTab.background}`" @ready="onReady"  ref="youtube" class=" min-h-[calc(100vh-60px)] flex flex-col justify-center items-center p-6  lg:scale-125"/>
                     </div>
                     <div v-else class=" w-full min-h-[calc(100vh-60px)] flex flex-col justify-center items-center p-6 "
@@ -38,7 +38,7 @@
 
                     </div>
                 </div>
-                <div v-else class="flex flex-col justify-center items-center text-white bg-slate-700 relative" >
+                <div v-else class="flex flex-col justify-center items-center text-white bg-slate-700 relative"   :style="{ backgroundImage: `url(${tabs[0].cover})` }" >
                     <div v-if="tabs[0].bg_type == 'video'">
                         <YouTube :src="`https://www.youtube.com/watch?v=${tabs[0].background}`" @ready="onReady"  ref="youtube" class=" min-h-[calc(100vh-60px)] flex flex-col justify-center items-center p-6  lg:scale-125"/>
                     </div>
