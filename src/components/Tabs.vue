@@ -8,31 +8,42 @@
                     eco-friendly and energy-saving production.
                 </div>
                 <ul class="divide-y lg:divide-y-2 divide-slate-50">
-                    <li v-for="(item, index) in tabs" :key="index"  >
-                        <button @click="select(item)"  
-                            class="p-4 w-full inline-block text-left bg-[#4a495b1a]  active:border-r-4 active:border-primary focus:border-r-4 focus:border-primary  focus:bg-[#2a25314d]" >
+                    <li v-for="(item, index) in tabs" :key="index">
+                        <button @click="select(item)" :class="index === activeIndex ? 'bg-[#2a25314d] border-r-4 border-primary' : ''"
+                            class="p-4 w-full inline-block text-left bg-[#4a495b1a]  active:border-r-4 active:border-primary focus:border-r-4 focus:border-primary  focus:bg-[#2a25314d]">
                             {{ item.name }}
                         </button>
                     </li>
                 </ul>
             </div>
-            <div class="col-span-4 flex flex-col justify-center items-center text-white bg-slate-700 relative">
-                <div class="layer"></div>
-                <div v-if="selectTab"
-                    class=" w-full min-h-[calc(100vh-60px)] flex flex-col justify-center items-center p-6 "
-                    :style="{ backgroundImage: `url(${selectTab.background})` }">
-                    <div class="max-w-[600px] p-6 relative ">
-                        <p class="text-xl lg:text-3xl">
-                            {{ selectTab.description }}
-                        </p>
-                        <button
-                            class="text-tertiary bg-secondary py-4 px-6 mt-5 hover:bg-slate-700  duration-200 max-w-max inline-block">
-                            Learn More
-                        </button>
-                    </div>
+            <div class="col-span-4 ">
 
+                <div v-if="selectTab"
+                    class="flex flex-col justify-center items-center text-white bg-slate-700 relative">
+                    <div class="layer"></div>
+                    <div v-if="selectTab.bg_type == 'video'" class="w-full overflow-hidden flex justify-center items-center">
+
+                        <YouTube :src="`https://www.youtube.com/watch?v=${selectTab.background}`" @ready="onReady"  ref="youtube" class=" min-h-[calc(100vh-60px)] flex flex-col justify-center items-center p-6  lg:scale-125"/>
+                    </div>
+                    <div v-else class=" w-full min-h-[calc(100vh-60px)] flex flex-col justify-center items-center p-6 "
+                        :style="{ backgroundImage: `url(${selectTab.background})` }">
+                        <div class="max-w-[600px] p-6 relative ">
+                            <p class="text-xl lg:text-3xl">
+                                {{ selectTab.description }}
+                            </p>
+                            <button
+                                class="text-tertiary bg-secondary py-4 px-6 mt-5 hover:bg-slate-700  duration-200 max-w-max inline-block">
+                                Learn More
+                            </button>
+                        </div>
+
+                    </div>
                 </div>
-                <div v-else class="w-full min-h-[calc(100vh-60px)] flex flex-col justify-center items-center p-6 "
+                <div v-else class="flex flex-col justify-center items-center text-white bg-slate-700 relative" >
+                    <div v-if="tabs[0].bg_type == 'video'">
+                        <YouTube :src="`https://www.youtube.com/watch?v=${tabs[0].background}`" @ready="onReady"  ref="youtube" class=" min-h-[calc(100vh-60px)] flex flex-col justify-center items-center p-6  lg:scale-125"/>
+                    </div>
+                    <div v-else class="w-full min-h-[calc(100vh-60px)] flex flex-col justify-center items-center p-6 "
                     :style="{ backgroundImage: `url(${tabs[0].background})` }">
                     <div class="max-w-[600px] p-6 relative">
                         <p class="text-xl lg:text-3xl">
@@ -45,27 +56,33 @@
                     </div>
 
                 </div>
-
+                </div>
             </div>
         </div>
     </section>
 </template>
 
 <script setup>
-import { computed, ref, watchEffect } from 'vue';
+import { computed, onMounted, ref, watchEffect } from 'vue';
 import tabs from '@/assets/tabs.json';
+import YouTube from 'vue3-youtube';
 
-// Ref aktif dan tab terpilih
 
 // Ref untuk tab yang dipilih
 const selectTab = ref(null);
-const active  =  ref('')
+const active = ref('')
+const youtube = ref(null)
 // Fungsi untuk memilih tab
-function select(item) {
+const activeIndex = ref(0);
+function select(item,index) {
     selectTab.value = item; // Tetapkan item terpilih    
+    activeIndex.value = index
     console.log('Selected tab:', selectTab.value);
 }
 
+const onReady = () =>{
+    youtube.value.playVideo()
+}
 
 </script>
 

@@ -3,7 +3,8 @@
         "name": "Compressors",
         "child": "",
         "class": "",
-        "background":"tabs/img2.jpg",
+        "background":"gmL4KZTUy9k",
+        "bg_type":"video",
         "description": " Mayekawa offers a comprehensive range of compressors with models developed in response to the variety of applications."
     },
     {
@@ -11,6 +12,7 @@
         "child": "",
         "class": "",
         "background":"tabs/img1.jpg",
+        "bg_type":"image",
         "description": " Our freezing and refrigeration technology is built on decades of experience in design and installments."
     },
     {
@@ -18,6 +20,7 @@
         "child": "",
         "class": "",
         "background":"tabs/img3.jpg",
+        "bg_type":"image",
         "description": " Mayekawa has been manufacturing large-sized air-conditioning heat pumps since 1971 well in advance of our competitors."
     },
     {
@@ -25,6 +28,7 @@
         "child": "",
         "class": "",
         "background":"tabs/img4.jpg",
+        "bg_type":"image",
         "description": " Mayekawa offers a range of freezers that will achieve the most efficient freezing conditions suitable for your needs.."
     },
     {
@@ -32,6 +36,7 @@
         "child": "",
         "class": "",
         "background":"tabs/img5.jpg",
+        "bg_type":"image",
         "description": "  Mayekawa's gas compressors' performance and reliability have been proven all around the world, over and over again."
     },
     {
@@ -39,6 +44,7 @@
         "child": "",
         "class": "",
         "background":"tabs/img6.jpg",
+        "bg_type":"image",
         "description": "Mayekawa is a pioneer of the robotization for meat processing & has developed different kinds of robots for each process"
     },
     {
@@ -46,6 +52,7 @@
         "child": "",
         "class": "",
         "background":"tabs/img7.jpg",
+        "bg_type":"image",
         "description": " Mayekawa offers equipment that improves safety, efficiency and saves energy  in f&b and cold storage facilities worldwide"
     }
 ]
