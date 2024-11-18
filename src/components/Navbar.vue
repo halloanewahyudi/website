@@ -57,8 +57,8 @@ const openSearch = () =>{
         <div class="menu-wrap w-full lg:w-auto lg:flex flex-col gap-1" :class="openMenu ? '' : 'hidden'">
           <div class="menu-atas hidden lg:flex justify-end pt-2 ">
             <ul class="flex items-center divide-x divide-neutral-400 text-[12px]">
-              <li><a href="#" class="px-2"> News</a></li>
-              <li><a href="#" class="px-2"> event</a></li>
+              <li><a href="#" class="px-2"> ID</a></li>
+              <li><a href="#" class="px-2"> ENG</a></li>
             </ul>
           </div>
           <div class="menu-bawah flex items-center  gap-4">

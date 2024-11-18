@@ -1,5 +1,5 @@
 <template>
-    <div class="footer bg-secondary text-slate-200 pt-20">
+    <div class="footer bg-secondary text-slate-200 pt-12">
         <div class="container">
             <img src="/mayekawa-mycom.png" alt="" class="h-20 grayscale brightness-100 invert">
             <div class="grid grid-cols-1 lg:grid-cols-4 gap-5 lg:gap-10">

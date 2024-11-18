@@ -92,6 +92,12 @@
         "child": ""
     },
     {
+        "name": "News",
+        "class": "",
+        "description": "",
+        "child": ""
+    },
+    {
         "name": "Contact",
         "class": "",
         "description": "",
