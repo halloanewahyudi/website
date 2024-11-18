@@ -8,16 +8,16 @@ import VideoBackground from 'vue-responsive-video-background-player'
                 <video-background src="robot.mp4"
                     class="h-full w-full min-h-screen flex flex-col justify-center items-center p-6 lg:p-10">
                     <div class="layer"></div>
-                    <div class="flex flex-col justify-center p-6 lg:p-10 h-full w-full">
+                    <div class="flex flex-col justify-end p-6 lg:p-10 h-full w-full">
                         <div class="max-w-[800px] flex flex-col gap-4 p-6 relative">
-                            <img src="https://www.mayekawa.com/with/images/logo_main_red.svg" alt="" class="w-40">
+                            <!-- <img src="https://www.mayekawa.com/with/images/logo_main_red.svg" alt="" class="w-40"> -->
+                            <div class="flex items-center">
+                                <img src="/mayekawa-text.png" alt="" class="w-40">
+                                <span class="italic text-primary font-semibold text-xl"> Manufacturing</span>
+                            </div>
                             <p class="text-3xl lg:text-6-xl font-semibold text-white leading-normal">
-                                Our technology is helping to create a society in which all people can live safely,
-                                securely,
-                                and comfortably by providing solutions for the global challenges related to the
-                                environment
-                                and food.
-                                What could you do with Mayekawa?
+                                Mayekawa Manufacturing Company has expanded its business by focusing on
+                                freezing and compression technologies ever since its establishment in 1924.
                             </p>
                             <button
                                 class="text-tertiary bg-secondary py-4 px-6 hover:bg-slate-700  duration-200 max-w-max inline-block">
@@ -29,18 +29,18 @@ import VideoBackground from 'vue-responsive-video-background-player'
                 </video-background>
             </div>
             <div class="lg:col-span-2 h-screen w-full  bg-green-200 grid grid-cols-1  justify-between">
-                <div class="item bg-secondary text-white h-full w-full grid grid-cols-2  items-center divide-y divide-slate-200">
+                <div
+                    class="item bg-secondary text-white h-full w-full grid grid-cols-2  items-center divide-y divide-slate-200">
                     <div class="p-6 flex flex-col gap-4">
                         <p>
                             Case study "Clean district heating made possible with heat pumps"
                         </p>
                         <a href="" class="text-tertiary hover:opacity-75 duration-200">Learn More</a>
                     </div>
-                    <div class="h-[calc(100vh/3)] ">
-                    <img src="https://www.mayekawa.com/images/topnews/building_and_factory.png" alt=""
-                        class="w-full h-full object-cover">
-                        </div>
-
+                    <div class="h-[calc(100vh/3)] overflow-hidden">
+                        <img src="https://www.mayekawa.com/images/topnews/building_and_factory.png" alt=""
+                            class="w-full h-full object-cover">
+                    </div>
                 </div>
                 <div class="item bg-secondary text-white h-full w-full grid grid-cols-2 items-center divide-y">
                     <div class="p-6 flex flex-col gap-4">
@@ -49,9 +49,9 @@ import VideoBackground from 'vue-responsive-video-background-player'
                         </p>
                         <a href="" class="text-tertiary hover:opacity-75 duration-200">Learn More</a>
                     </div>
-                    <div class="h-[calc(100vh/3)] ">
-                        <img src="https://www.mayekawa.com/images/topnews/img_article_casestudy.jpg" alt=""
-                        class="w-full h-full object-cover">
+                    <div class="h-[calc(100vh/3)] overflow-hidden">
+                        <img src="https://www.mayekawa.com/images/topnews/img_article_fugu.jpg" alt=""
+                            class="w-full h-full object-cover scale-110">
                     </div>
 
 
@@ -64,9 +64,9 @@ import VideoBackground from 'vue-responsive-video-background-player'
                         <a href="" class="text-tertiary hover:opacity-75 duration-200">Learn More</a>
                     </div>
                     <div class="h-[calc(100vh/3)] ">
-                    <img src="https://www.mayekawa.com/images/img_worldmap.svg" alt=""
-                        class="w-full h-full object-fill">
-                        </div>
+                        <img src="https://www.mayekawa.com/images/img_worldmap.svg" alt=""
+                            class="w-full h-full object-fill">
+                    </div>
 
                 </div>
             </div>
@@ -74,9 +74,9 @@ import VideoBackground from 'vue-responsive-video-background-player'
     </section>
 </template>
 <style scoped>
-.layer{
+.layer {
     @apply absolute top-0 left-0 w-full h-full;
-    background: rgb(2,0,36);
-    background: linear-gradient(6deg, rgba(2,0,36,0.7231267507002801) 0%, rgba(0,212,255,0) 100%);
+    background: rgb(2, 0, 36);
+    background: linear-gradient(6deg, rgba(2, 0, 36, 0.8239670868347339) 0%, rgba(0, 212, 255, 0) 75%);
 }
 </style>

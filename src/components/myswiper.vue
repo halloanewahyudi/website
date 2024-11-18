@@ -6,7 +6,7 @@
                     <div
                         class="flex flex-col  gap-4 justify-center items-center  text-center lg:text-left lg:justify-start lg:items-start">
                         <img :src="item.logo" alt="" class="scale-75 mb-5 inline-block w-max">
-                        <h4 class="text-xl lg:text-3xl font-semibold">{{ item.title }}</h4>
+                        <h4 class="text-xl lg:text-3xl mb-3">{{ item.title }}</h4>
                         <p>{{ item.description }}</p>
                         <button
                             class="text-tertiary bg-secondary py-4 px-6 hover:bg-slate-700  duration-200 max-w-max inline-block">

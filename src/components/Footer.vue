@@ -26,7 +26,7 @@
 
                 </div>
                 <div>
-                    <h4 class="font-medium text-tertiary text-lg mb-2"> Company</h4>
+                    <h4 class="font-medium text-tertiary text-lg mb-2"> Products</h4>
                     <ul>
                         <li v-for="item in menu[1].child" :key="item">
                             <a href="#" class="">{{ item.name }}</a>
@@ -37,7 +37,7 @@
             </div>
         </div>
         <div class="p-4 mt-10 border-t border-slate-500 text-center text-sm">
-            Copyright © 2024 PT. Mayekawa Indonesia. All Rights Reserved.
+            Copyright © 2024 PT. Mayekawa Indonesia. All Rights Reserved | powered by <a href="https://proweb.co.id" target="_blank">proweb</a> 
         </div>
     </div>
 </template>

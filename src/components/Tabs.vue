@@ -7,10 +7,10 @@
                     We are involved in various industries, systems and products by contributing to facilitate
                     eco-friendly and energy-saving production.
                 </div>
-                <ul class="divide-y lg:divide-y-2 divide-slate-500">
+                <ul class="divide-y lg:divide-y-2 divide-slate-50">
                     <li v-for="(item, index) in tabs" :key="index"  >
                         <button @click="select(item)"  
-                            class="p-4 w-full inline-block text-left bg-secondary text-white active:border-r-4 active:border-primary focus:border-r-4 focus:border-primary  focus:bg-slate-700" >
+                            class="p-4 w-full inline-block text-left bg-[#4a495b1a]  active:border-r-4 active:border-primary focus:border-r-4 focus:border-primary  focus:bg-[#2a25314d]" >
                             {{ item.name }}
                         </button>
                     </li>
