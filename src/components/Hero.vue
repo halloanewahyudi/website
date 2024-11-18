@@ -5,7 +5,7 @@ import VideoBackground from 'vue-responsive-video-background-player'
     <section>
         <div class="grid grid-cols-1 lg:grid-cols-6 min-h-screen w-full">
             <div class="lg:col-span-4 relative">
-                <video-background src="robot.mp4"
+                <video-background src="mayekawa-cover.mp4"
                     class="h-full w-full min-h-screen flex flex-col justify-center items-center p-6 lg:p-10">
                     <div class="layer"></div>
                     <div class="flex flex-col justify-end p-6 lg:p-10 h-full w-full">
