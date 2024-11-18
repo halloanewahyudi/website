@@ -9,7 +9,7 @@
                 </div>
                 <ul class="divide-y lg:divide-y-2 divide-slate-50">
                     <li v-for="(item, index) in tabs" :key="index">
-                        <button @click="select(item)" :class="index === activeIndex ? 'bg-[#2a25314d] border-r-4 border-primary' : ''"
+                        <button @click="select(item)" :class="index === activeIndex ? '!bg-[#2a25314d] border-r-4 border-primary' : ''"
                             class="p-4 w-full inline-block text-left bg-[#4a495b1a]  active:border-r-4 active:border-primary focus:border-r-4 focus:border-primary  focus:bg-[#2a25314d]">
                             {{ item.name }}
                         </button>
@@ -22,7 +22,6 @@
                     class="flex flex-col justify-center items-center text-white bg-slate-700 relative">
                     <div class="layer"></div>
                     <div v-if="selectTab.bg_type == 'video'" class="w-full overflow-hidden flex justify-center items-center">
-
                         <YouTube :src="`https://www.youtube.com/watch?v=${selectTab.background}`" @ready="onReady"  ref="youtube" class=" min-h-[calc(100vh-60px)] flex flex-col justify-center items-center p-6  lg:scale-125"/>
                     </div>
                     <div v-else class=" w-full min-h-[calc(100vh-60px)] flex flex-col justify-center items-center p-6 "
