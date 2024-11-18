@@ -11,9 +11,9 @@ import VideoBackground from 'vue-responsive-video-background-player'
                     <div class="flex flex-col justify-end p-6 lg:p-10 h-full w-full">
                         <div class="max-w-[800px] flex flex-col gap-4 p-6 relative">
                             <!-- <img src="https://www.mayekawa.com/with/images/logo_main_red.svg" alt="" class="w-40"> -->
-                            <div class="flex items-center">
-                                <img src="/mayekawa-text.png" alt="" class="w-40">
-                                <span class="italic text-primary font-semibold text-xl"> Manufacturing</span>
+                            <div class="flex items-end gap-4 text-primary">
+                               <span class="text-4xl lg:text-5xl font-bold">Mayekawa</span>
+                                <span class="italic  font-semibold text-xl"> Indonesia</span>
                             </div>
                             <p class="text-3xl lg:text-6-xl font-semibold text-white leading-normal">
                                 Mayekawa Manufacturing Company has expanded its business by focusing on
