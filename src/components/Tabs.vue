@@ -9,8 +9,8 @@
                 </div>
                 <ul class="divide-y lg:divide-y-2 divide-slate-50">
                     <li v-for="(item, index) in tabs" :key="index">
-                        <button @click="select(item)" :class="index === activeIndex ? '!bg-[#2a25314d] border-r-4 border-primary' : ''"
-                            class="p-4 w-full inline-block text-left bg-[#4a495b1a]  active:border-r-4 active:border-primary focus:border-r-4 focus:border-primary  focus:bg-[#2a25314d]">
+                        <button @click="select(item)" :class="index === activeIndex ? '!bg-[#2a25314d] border-r-4 border-primary font-semibold text-xl' : ''"
+                            class="p-4 w-full inline-block text-left bg-[#4a495b1a]  active:border-r-4 active:border-primary focus:border-r-4 focus:border-primary  focus:bg-[#2a25314d] focus:font-semibold focus:text-xl">
                             {{ item.name }}
                         </button>
                     </li>
@@ -22,7 +22,8 @@
                     class="flex flex-col justify-center items-center text-white bg-slate-700 relative">
                     <div class="layer"></div>
                     <div v-if="selectTab.bg_type == 'video'" class="w-full overflow-hidden flex justify-center items-center"   :style="{ backgroundImage: `url(${selectTab.cover})` }">
-                        <YouTube :src="`https://www.youtube.com/watch?v=${selectTab.background}`" @ready="onReady"  ref="youtube" class=" min-h-[calc(100vh-60px)] flex flex-col justify-center items-center p-6  lg:scale-125"/>
+                            <YouTube :src="`https://www.youtube.com/watch?v=${selectTab.background}`" @ready="onReady"  ref="youtube" class=" min-h-[calc(100vh-60px)] flex flex-col justify-center items-center p-6  lg:scale-125 yt"/>
+                       
                     </div>
                     <div v-else class=" w-full min-h-[calc(100vh-60px)] flex flex-col justify-center items-center p-6 "
                         :style="{ backgroundImage: `url(${selectTab.background})` }">
@@ -40,7 +41,7 @@
                 </div>
                 <div v-else class="flex flex-col justify-center items-center text-white bg-slate-700 relative"   :style="{ backgroundImage: `url(${tabs[0].cover})` }" >
                     <div v-if="tabs[0].bg_type == 'video'">
-                        <YouTube :src="`https://www.youtube.com/watch?v=${tabs[0].background}`" @ready="onReady"  ref="youtube" class=" min-h-[calc(100vh-60px)] flex flex-col justify-center items-center p-6  lg:scale-125"/>
+                        <YouTube :src="`https://www.youtube.com/watch?v=${tabs[0].background}`" @ready="onReady"  ref="youtube" class=" min-h-[calc(100vh-60px)] flex flex-col justify-center items-center p-6  lg:scale-125  yt"/>
                     </div>
                     <div v-else class="w-full min-h-[calc(100vh-60px)] flex flex-col justify-center items-center p-6 "
                     :style="{ backgroundImage: `url(${tabs[0].background})` }">
@@ -86,10 +87,7 @@ const onReady = () =>{
 </script>
 
 <style scoped>
-.active {
-    background-color: #007bff;
-    /* Warna latar belakang saat aktif */
-    color: #fff;
-    /* Warna teks saat aktif */
+.yt iframe{
+    @apply rounded-lg overflow-hidden !important;
 }
 </style>
