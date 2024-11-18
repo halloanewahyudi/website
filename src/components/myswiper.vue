@@ -21,13 +21,13 @@
         </swiper>
 
         <!-- swiper- thumbail -->
-         <div class="container">
+         <div class="max-w-screen-lg mx-auto">
             <swiper @swiper="setThumbsSwiper" :loop="true" :spaceBetween="10" :slidesPerView="3" :centerdSlides="true"
            :watchSlidesProgress="true" :modules="modules"
             class="mySwiper ">
-            <swiper-slide v-for="thumb in brands" :key="thumb">
+            <swiper-slide v-for="(thumb,index) in brands" :key="thumb">
                 <div class="w-full  h-max flex flex-col justify-center items-center bg-white p-6 text-center">
-                    <img :src="thumb.logo" alt="" class="h-[90px] object-contain" >
+                    <img :src="thumb.logo" alt="" class="h-[90px] object-contain" :class="index === 0 ? 'w-[200px] h-auto mt-7' : ''" >
                 </div>
             </swiper-slide>
         </swiper>
@@ -53,7 +53,7 @@ const setThumbsSwiper = (swiper) => {
 
 <style scoped>
 .brand-swiper {
-    @apply relative overflow-hidden container;
+    @apply relative overflow-hidden max-w-screen-lg;
 }
 
 .brand-swiper .swiper-wrap {
@@ -66,7 +66,7 @@ const setThumbsSwiper = (swiper) => {
 
 
 .mySwiper {
-    @apply  max-w-xl w-full  mx-auto flex flex-col justify-center items-center text-center bg-white shadow-2xl mt-10 ;
+    @apply  w-full  mx-auto flex flex-col justify-center items-center text-center bg-white shadow-2xl mt-10 ;
 }
 .swiper-slide-thumb-active::before{
     content:'';
