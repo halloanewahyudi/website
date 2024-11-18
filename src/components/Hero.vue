@@ -13,7 +13,7 @@ import VideoBackground from 'vue-responsive-video-background-player'
                             <!-- <img src="https://www.mayekawa.com/with/images/logo_main_red.svg" alt="" class="w-40"> -->
                             <div class="flex items-end gap-4 text-primary">
                                <span class="text-4xl lg:text-5xl font-bold">Mayekawa</span>
-                                <span class="italic  font-semibold text-xl"> Indonesia</span>
+                                <span class="italic  font-semibold text-2xl"> Indonesia</span>
                             </div>
                             <p class="text-3xl lg:text-6-xl font-semibold text-white leading-normal">
                                 Mayekawa Manufacturing Company has expanded its business by focusing on
