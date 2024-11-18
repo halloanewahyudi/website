@@ -7,11 +7,11 @@
     {
         "id":2,
         "title":"orem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non diam dui. Phasellus dignissim mollis  ",
-        "image":"https://www.mayekawa.com/with/stories/kamchatka/images/bg_mv2.jpg"
+        "image":"/case2.jpg"
     },
     {
         "id":3,
         "title":"justo, in iaculis neque blandit sit amet. Nam interdum quam mi, eu tempor libero iaculis ut.",
-        "image":"https://www.mayekawa.com/with/stories/hachinohe/images/bg_mv.jpg"
+        "image":"/case3.jpg"
     }
 ]

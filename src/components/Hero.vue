@@ -33,38 +33,38 @@ import VideoBackground from 'vue-responsive-video-background-player'
                     class="item bg-secondary text-white h-full w-full grid grid-cols-2  items-center divide-y divide-slate-200">
                     <div class="p-6 flex flex-col gap-4">
                         <p>
-                            Case study "Clean district heating made possible with heat pumps"
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, atque.
                         </p>
                         <a href="" class="text-tertiary hover:opacity-75 duration-200">Learn More</a>
                     </div>
                     <div class="h-[calc(100vh/3)] overflow-hidden">
-                        <img src="https://www.mayekawa.com/images/topnews/building_and_factory.png" alt=""
+                        <img src="/ice-cream.jpg" alt=""
                             class="w-full h-full object-cover">
                     </div>
                 </div>
                 <div class="item bg-secondary text-white h-full w-full grid grid-cols-2 items-center divide-y">
                     <div class="p-6 flex flex-col gap-4">
                         <p>
-                            Case study "Clean district heating made possible with heat pumps"
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, blanditiis.
                         </p>
                         <a href="" class="text-tertiary hover:opacity-75 duration-200">Learn More</a>
                     </div>
                     <div class="h-[calc(100vh/3)] overflow-hidden">
-                        <img src="https://www.mayekawa.com/images/topnews/img_article_fugu.jpg" alt=""
+                        <img src="/case2.jpg" alt=""
                             class="w-full h-full object-cover scale-110">
                     </div>
 
 
                 </div>
-                <div class="item bg-slate-900 text-white h-full w-full grid grid-cols-2 items-center divide-y">
+                <div class="item bg-secondary text-white h-full w-full grid grid-cols-2 items-center divide-y">
                     <div class="p-6 flex flex-col gap-4">
                         <p>
-                            Case study "Clean district heating made possible with heat pumps"
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, explicabo?
                         </p>
                         <a href="" class="text-tertiary hover:opacity-75 duration-200">Learn More</a>
                     </div>
                     <div class="h-[calc(100vh/3)] ">
-                        <img src="https://www.mayekawa.com/images/img_worldmap.svg" alt=""
+                        <img src="/case3.jpg" alt=""
                             class="w-full h-full object-fill">
                     </div>
 
